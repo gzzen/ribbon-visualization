@@ -1,0 +1,50 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+h1 {
+	margin: 0 0 4px 0;
+	font-family: Arial, sans-serif;
+	font-size: clamp(1rem, 2vw, 1.7rem);
+	padding: 8px 12px 4px 12px;
+	color: #1a1a2e;
+}
+
+.container {
+	width: 100%;
+	padding: 0 8px;
+}
+
+.view-label {
+	font-size: clamp(10px, 1vw, 15px);
+	padding: clamp(4px, 0.5vw, 7px) clamp(6px, 0.7vw, 10px);
+	background-color: #f5f5f5;
+	border-left: 4px solid #4CAF50;
+	border-radius: 0 4px 4px 0;
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.view1 {
+	margin-bottom: 0;
+	margin-top: clamp(10px, 1.4vw, 25px);
+	margin-left: 160px;
+}
+
+svg {
+	max-width: 100%;
+}

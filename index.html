@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Parallel Coordinates — Student Performance</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Factors</h1>
+        <div id="pc-view">
+            <div class="view-label view1">Pathways Between Student Characteristics and Final Grade</div>
+        </div>
+    </div>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script type="module">
+        import PCView from './js/views/viewOnePC/PCView.js';
+        const pcView = new PCView('#pc-view');
+        pcView.init();
+    </script>
+</body>
+</html>
